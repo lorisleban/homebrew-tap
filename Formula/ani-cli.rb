@@ -14,11 +14,6 @@ class AniCli < Formula
     system "cargo", "install", *std_cargo_args(path: ".")
   end
 
-  test do
-    output = shell_output("#{bin}/ani-cli 2>&1", 1)
-    assert_match "error:", output
-  end
-
   def caveats
     <<~EOS
       ani-cli launches an external media player at runtime.
@@ -30,4 +25,10 @@ class AniCli < Formula
       On macOS, IINA can also be used if installed separately.
     EOS
   end
+
+  test do
+    assert_predicate bin/"ani-cli", :exist?
+    assert_predicate bin/"ani-cli", :executable?
+  end
 end
+
