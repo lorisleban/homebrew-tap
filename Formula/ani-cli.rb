@@ -27,7 +27,7 @@ class AniCli < Formula
   end
 
   test do
-    assert_predicate bin/"ani-cli", :exist?
+    assert_path_exists bin/"ani-cli"
     assert_predicate bin/"ani-cli", :executable?
   end
 end
