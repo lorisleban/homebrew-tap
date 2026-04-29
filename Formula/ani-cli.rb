@@ -31,4 +31,3 @@ class AniCli < Formula
     assert_predicate bin/"ani-cli", :executable?
   end
 end
-
