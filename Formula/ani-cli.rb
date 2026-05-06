@@ -1,8 +1,8 @@
 class AniCli < Formula
   desc "Rust TUI anime client"
   homepage "https://github.com/lorisleban/ani-cli"
-  url "https://github.com/lorisleban/ani-cli/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed" 
+  url "https://github.com/lorisleban/ani-cli/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "54afbc32ee1438e645b0c21b86e701ede38c82024ab815b545b2197dfcc64742" 
   license "GPL-3.0-only"
 
   depends_on "rust" => :build
