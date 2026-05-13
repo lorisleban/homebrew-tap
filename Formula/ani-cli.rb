@@ -3,6 +3,7 @@ class AniCli < Formula
   homepage "https://github.com/lorisleban/ani-cli"
   url "https://github.com/lorisleban/ani-cli/archive/refs/tags/v0.3.1.tar.gz"
   sha256 "54afbc32ee1438e645b0c21b86e701ede38c82024ab815b545b2197dfcc64742" 
+  version "0.3.1"
   license "GPL-3.0-only"
 
   depends_on "rust" => :build
